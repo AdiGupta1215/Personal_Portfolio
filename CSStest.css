@@ -21,6 +21,7 @@ h1{
 font-size: 40px;
 }
 .center{
+    text-align: center;
 }
 body{
     background-color: #fff;
@@ -42,7 +43,6 @@ button{
 #darkmode{
     box-shadow: none;
     justify-self: baseline;
-    content: url("Images/sunicon.png");
 }
 
 .container{
