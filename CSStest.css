@@ -47,14 +47,14 @@ button{
 
 .container{
     padding: 10px 10% ;
-    min-width: 1100px;
+ 
 }
 
 nav{
     display: flex;
     align-items: center ;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: white;
 }
 
@@ -62,7 +62,8 @@ nav .rightside{
  display: flex;
  align-items: center;
  justify-content: space-around;
- flex-wrap: wrap;
+ flex-wrap: nowrap;
+ text-wrap: nowrap;
 }
 .logo{
     width: 140px;
@@ -123,16 +124,26 @@ nav ul li a:hover::after{
 .row{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap
+    flex-wrap: nowrap
+    
+}
+.about-col-2{
+display: flex;
+flex-direction: column;
+max-width: 450px;
+margin-left: 50px;
 }
 
 .about-col-2 h1 {
+
     margin-top: 5%;
     font-size: 40px;
+    text-wrap: nowrap
 }
 .about-col-2 p {
     margin-top: 20px;
-    display: flex;
+    text-wrap: wrap;
+    
 }
 
 #portfolio{
@@ -161,27 +172,38 @@ nav ul li a:hover::after{
     color: #fff ;
  
 }
-#contact img{
-    width: 75px;
-    height: 75px;
-    padding: 2px
-}
-
-.contact-list text{
-    margin-top: 5px;
-}
 
 .contact-list{
     margin: 5% 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+
+   
+}
+
+.contact-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #instalogo{
     border-radius: 50%;
     padding: 2px;
     box-shadow: none;
-    height: 75px !important;
-    width: 75px !important;
+    height: 75px;
+    width: 75px;
+}
+
+#phone{
+    width: 65px;
+    height: 65px;
+    padding: 4px
+}
+#email{
+    width: 75px;
+    height: 75px;
+    padding: 2px;
 }
